@@ -1,0 +1,25 @@
+name: ScaleMe
+version: '${project.version}'
+main: l1kko.scaleme.ScaleMe
+api-version: '1.21'
+
+commands:
+  scale:
+    description: Изменить размер персонажа
+    usage: /scale <размер> [игрок] или /scale reload
+permissions:
+  scaleme.use:
+    description: Разрешает менять размер себе
+    default: true
+  scaleme.limit.default:
+    description: Стандартные лимиты для всех
+    default: true
+  scaleme.others:
+    description: Разрешает менять размер другим
+    default: op
+  scaleme.reload:
+    description: Разрешает перезагружать конфиг
+    default: op
+  scaleme.bypass:
+    description: Игнорировать лимиты
+    default: op
